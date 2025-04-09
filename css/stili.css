@@ -12,11 +12,13 @@
     --primary-color-background-border: #216937;
     --primary-color-container-border: #216937;
     --primary-font:  font-family: verdana;
-    --primary-size-text-navbar: 14pt;
-    --primary-size-text: 18pt;
-    --primary-size-text-altri-articoli: 18pt;
+    --primary-fontsize-h1: 44pt;
+    --primary-font-size-h3: 18pt;
+    --primary-size-text-navbar: 12pt;
+    --primary-size-text: 12pt;
+    --primary-size-text-altri-articoli: 12pt;
     --primary-font-family-footer: font-family: sans-serif;
-    --primary-font-size-footer: 18pt;
+    --primary-font-size-footer: 12pt;
 }
 
 * {
@@ -47,7 +49,7 @@
 /* Installare un nuovo font */
 
 html {
-    width: 1920px;
+    width: 80%;
     height: 3500px;
     /*background-color: var(--primary-color-background-html);*/
     margin-left: auto;
@@ -69,8 +71,8 @@ body {
 }
 
 header {
-    /* width: 100%; */
-    height: 140px;
+    width: 100%;
+    height: auto;
     background-color: var(--primary-color-background-header);
     border: solid 1px var(--primary-color-border);
     text-align: center;
@@ -80,14 +82,14 @@ header {
 
 nav {
     width: 100%;
-    height: 60px;
+    height: auto;
     
     background-color: var(--primary-color-nav);
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
-    align-items: bottom;
+    align-items: middle;
 }
 
 nav ul {
@@ -97,9 +99,9 @@ nav ul {
 }
 
 nav .indice li {
-    display: inline;
+    display: inline-block;
     list-style: none;
-    padding: 1% 5px;
+    padding: 0;
     
 
 }
@@ -107,16 +109,15 @@ nav .indice li {
 nav .indice li a {
     font-family: sans-serif;
     font-size: var(--primary-size-text-navbar);
-    top: 0;
+    top: 2%;
     position: relative;
-    top: 30%;
     color: var(--primary-color-text-navbar);
 
 }   
 
 h1 {
     font-family: Miofont;
-    font-size: 60pt;
+    font-size: var(--primary-fontsize-h1);
     margin-top: 3px;
     margin-left: auto;
     margin-right: auto;
@@ -131,7 +132,7 @@ h1 {
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: 1792px;
+    width: 90%;
     height: auto; /* 786px */
     background-color: var(--primary-color-background-container);
     border: solid 1px var(--primary-color-container-border);
@@ -146,14 +147,6 @@ h1 {
     justify-content: center;
 }
 
-.altri_articoli_img {
-
-    width: 350px;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-
-}
 
 h3 {
     margin: 0;
@@ -161,12 +154,12 @@ h3 {
     padding: 0;
     text-align: center;
     color: var(--primary-color-text);
-    font-size: 28pt;
+    font-size: var(--primary-font-size-h3);
 }
+
 #primo_articolo {
     margin-top: 1%;
 }
-
 
 #primo_articolo figure {
     width: 35%;
@@ -175,44 +168,9 @@ h3 {
 
 }
 
-
 #primo_articolo figure figcaption {
     font: var(--primary-font);
     font-size: var(--primary-size-text);
-}
-
-#altri_articoli {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-around;
-    margin-top: 4%;
-}
-
-
-#altri_articoli #altri_articoli_sinistra,
-#altri_articoli_centro,
-#altri_articoli_destra {
-    width: 30%;
-}
-
-
-.altri_articoli_img {
-    float: left;
-    padding: 15px 15px 15px 0;
-}
-
-
-#altri_articoli figure {
-    width: 100%;
-    color: var(--primary-color-text);
-    margin: 0;
-    vertical-align: middle;
-}
-
-#altri_articoli figure figcaption {
-    font: var(--primary-font);
-    font-size: var(--primary-size-text-altri-articoli);
 }
 
 
@@ -227,8 +185,9 @@ h3 {
     
 }
 
-#Container_quintogruppo #primo_articolo .descrizionePrimoArticolo img {
-
+/* #Container_quintogruppo */ #primo_articolo .descrizionePrimoArticolo img {
+    
+    width: 100%;
     position: absolute;
     bottom: 0;
     top: 40%;
@@ -236,10 +195,12 @@ h3 {
     right: 0;
     margin: 25% auto;
 }
-
+/*
 
 #primo_articolo .descrizionePrimoArticolo img {
 
+    width: 100%;
+    
     position: absolute;
     bottom: 0;
     top: 40%;
@@ -247,6 +208,56 @@ h3 {
     right: 0;
     margin: auto;
 }
+*/
+
+#primo_articolo figure .ImgPrimoGruppo {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+
+
+#altri_articoli {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+
+#altri_articoli #altri_articoli_sinistra,
+#altri_articoli #altri_articoli_centro,
+#altri_articoli #altri_articoli_destra {
+    width: 30%;
+}
+
+#altri_articoli figure {
+    width: 100%;
+    color: var(--primary-color-text);
+    margin: 0;
+    vertical-align: middle;
+}
+
+#altri_articoli .altri_articoli_img {
+    width: 100%;
+    float: left;
+    padding: 15px 15px 15px 0;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+
+#altri_articoli figure figcaption {
+    font: var(--primary-font);
+    font-size: var(--primary-size-text-altri-articoli);
+}
+
 
 #altri_articoli h4 {
     padding: 1%;
@@ -270,35 +281,9 @@ h3 {
     list-style-position: inside;
 }
 
-
-.ImgPrimoGruppo {
-    width: 600px;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-}
-
-/* primo paragrafo */
-.CCspace {
-    width: 200px;
-    height: 210px;
-    padding: 5px;
-    float: right;
-}
-
-/* secondo paragrafo */
-.CCpullout {
-    width: 400px;
-    height: 210px;
-    padding: 5px;
-    float: left;
-    margin-left: -220px;
-}
-
-
 footer {
     width: 100%;
-    height: 250px;
+    height: auto;
     background: var(--primary-color-background-footer);
     padding-top: 1%;
     display: flex;
@@ -306,36 +291,47 @@ footer {
     font-family: var(--primary-font-family-footer);
     font-size: var(--primary-font-size-footer);
     color: var(--primary-color-text);
+    margin-bottom: 1%;
+    padding-bottom: 1%;
 }
 
 footer div {
-    width: 25%;
+    width: 100%;
+    margin: 1% 4%;
 
 }
 
 footer #autori {
+    width: 30%;
     text-align: left;
-    margin-top: 3%;
+    margin-top: 1%;
+    overflow: auto;
+
 }
 
 footer #contatti {
+    width: 30%;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1%;
+    overflow: auto;
+
 }
 
 footer #indirizzo {
-
+    width: 30%;
     display: flex;
     text-align: right;
-    justify-content: space-between;
+    justify-content: space-around;
+    overflow: auto;
+
 }
 
-footer #indirizzo img {
-
-    height: 90%;
-}
 
 footer #indirizzo #indirizzo_descrizione {
-    width: 50%;
-    margin-top: 13%;
+    width: 75%;
 }
+
+footer #indirizzo #indirizzo_descrizione img {
+   float: left;
+}
+
