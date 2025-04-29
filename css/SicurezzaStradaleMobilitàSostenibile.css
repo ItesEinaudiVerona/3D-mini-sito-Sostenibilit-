@@ -122,6 +122,10 @@ strong {
 }
 
 #primo_articolo,
+#secondo_articolo,
+#terzo_articolo,
+#quarto_articolo,
+#quinto_articolo,
 #altri_articoli {
     display: inline-flex;
     justify-content: center;
@@ -152,11 +156,15 @@ h3 {
     font-size: var(--primary-font-size-h3);
 }
 
-#primo_articolo {
+#primo_articolo,
+#secondo_articolo,
+#terzo_articolo,
+#quarto_articolo,
+#quinto_articolo {
     margin-top: 1%;
 }
 
-#primo_articolo figure {
+ figure {
     width: 35%;
     text-align: center;
     color: var(--primary-color-text);
@@ -166,12 +174,12 @@ figcaption {
     margin-bottom: 10px;
 }
 
-#primo_articolo figure figcaption {
+ figure figcaption {
     font: var(--primary-font);
     font-size: var(--primary-size-text);
 }
 
-#primo_articolo .descrizionePrimoArticolo {
+ .descrizionePrimoArticolo {
     width: 58%;
     padding: 1%;
     margin-left: 10px;
@@ -182,7 +190,7 @@ figcaption {
     position: center;
 }
 
-#primo_articolo .descrizionePrimoArticolo img {
+ .descrizionePrimoArticolo img {
 
 
     width: 100%;
@@ -194,7 +202,7 @@ figcaption {
     margin: 25% auto;
 }
 
-#primo_articolo figure .ImgPrimoGruppo {
+figure .ImgPrimoGruppo {
     width: 100%;
     display: block;
     margin: 10px auto;
