@@ -1,0 +1,316 @@
+:root {
+    color: white;
+    --primary-color-nav: #38a459;
+    --primary-color-text-navbar: white;
+    --primary-color-text: white;
+    --primary-color-border: #216937;
+    --primary-color-background-html: #216937;
+    --primary-color-background-header: #216937;
+    --primary-color-background-body: linear-gradient(90deg, #1e5f31 5%, #318f4f 35%, #48cb70 100%);
+    --primary-color-background-footer: linear-gradient(90deg, #1e5f31 5%, #318f4f 35%, #48cb70 100%);
+    --primary-color-background-container: #7fc995;
+    --primary-color-background-border: #216937;
+    --primary-color-container-border: #216937;
+    --primary-font: font-family: verdana;
+    --primary-fontsize-h1: 44pt;
+    --primary-font-size-h3: 18pt;
+    --primary-size-text-navbar: 12pt;
+    --primary-size-text: 12pt;
+    --primary-size-text-altri-articoli: 12pt;
+    --primary-font-family-footer: font-family: sans-serif;
+    --primary-font-size-footer: 12pt;
+}
+
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Miofont;
+    src: url(../fonts/Moonday.ttf);
+}
+
+html {
+    width: 80%;
+    height: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../immagini/Sfondo_HTML_sostenibilità.jpg);
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: var(--primary-color-background-body);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#back_home {
+    float: inline-end;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color-background-header);
+    border: solid 1px var(--primary-color-border);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color-nav);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav .indice li {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+nav .indice li a {
+    font-family: sans-serif;
+    font-size: var(--primary-size-text-navbar);
+    top: 2%;
+    position: relative;
+    color: var(--primary-color-text-navbar);
+}
+
+h1 {
+    font-family: Miofont;
+    font-size: var(--primary-fontsize-h1);
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--primary-color-text);
+}
+
+#Container_primogruppo {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    background-color: var(--primary-color-background-container);
+    border: solid 1px var(--primary-color-container-border);
+}
+
+strong {
+    font-weight: bold;
+}
+
+#primo_articolo,
+#altri_articoli {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.sottoarticolo {
+    padding-bottom: 40px;
+}
+
+.descrizionesottoarticolo {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.descrizionePrimoArticolo2 {
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+    color: var(--primary-color-text);
+    font-size: var(--primary-font-size-h3);
+}
+
+#primo_articolo {
+    margin-top: 1%;
+}
+
+#primo_articolo figure {
+    width: 35%;
+    text-align: center;
+    color: var(--primary-color-text);
+}
+
+figcaption {
+    margin-bottom: 10px;
+}
+
+#primo_articolo figure figcaption {
+    font: var(--primary-font);
+    font-size: var(--primary-size-text);
+}
+
+#primo_articolo .descrizionePrimoArticolo {
+    width: 58%;
+    padding: 1%;
+    margin-left: 10px;
+    color: var(--primary-color-text);
+    font: var(--primary-font);
+    font-size: var(--primary-size-text);
+    text-align: justify;
+    position: center;
+}
+
+#primo_articolo .descrizionePrimoArticolo img {
+
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 25% auto;
+}
+
+#primo_articolo figure .ImgPrimoGruppo {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: "- ";
+    padding: 0;
+    margin: 1% 2%;
+    color: var(--primary-color-text);
+    font: var(--primary-font);
+    font-size: var(--primary-size-text-altri-articoli);
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: var(--primary-color-background-footer);
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--primary-font-family-footer);
+    font-size: var(--primary-font-size-footer);
+    color: var(--primary-color-text);
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+
+footer div {
+    width: 100%;
+    margin: 1% 4%;
+}
+
+footer #autori {
+    width: 30%;
+    text-align: left;
+    margin-top: 1%;
+    overflow: auto;
+}
+
+footer #contatti {
+    width: 30%;
+    text-align: center;
+    margin-top: 1%;
+    overflow: auto;
+}
+
+footer #indirizzo {
+    width: 30%;
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+footer #indirizzo #indirizzo_descrizione {
+    width: 75%;
+}
+
+footer #indirizzo #indirizzo_descrizione img {
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .indice li {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    #primo_articolo,
+    #altri_articoli {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    #primo_articolo figure,
+    #primo_articolo .descrizionePrimoArticolo,
+    #altri_articoli #altri_articoli_sinistra,
+    #altri_articoli #altri_articoli_centro,
+    #altri_articoli #altri_articoli_destra {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #primo_articolo .descrizionePrimoArticolo img {
+        position: static;
+        margin: 10px auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #autori,
+    footer #contatti,
+    footer #indirizzo {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    footer #indirizzo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    html {
+        width: 95%;
+    }
+}
