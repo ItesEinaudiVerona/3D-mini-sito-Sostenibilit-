@@ -66,6 +66,27 @@ body {
     margin-right: auto;
 }
 
+
+/* unvisited link */
+a:link {
+    color: inherit;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: inherit;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: inherit;
+  }
+  
+  /* selected link */
+  a:active {
+    color: inherit;
+  }
+
 #back_home {
     float: inline-end;
 }
@@ -195,20 +216,7 @@ h3 {
     right: 0;
     margin: 25% auto;
 }
-/*
 
-#primo_articolo .descrizionePrimoArticolo img {
-
-    width: 100%;
-    
-    position: absolute;
-    bottom: 0;
-    top: 40%;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-*/
 
 #primo_articolo figure .ImgPrimoGruppo {
     width: 100%;
