@@ -81,11 +81,6 @@ a:link {
   a:hover {
     color: inherit;
   }
-  
-  /* selected link */
-  a:active {
-    color: inherit;
-  }
 
 #back_home {
     float: inline-end;
