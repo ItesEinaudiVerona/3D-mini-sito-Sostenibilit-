@@ -1,0 +1,158 @@
+h1 {
+
+    text-transform: uppercase; 
+}
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+p {
+    max-width: 700px;
+    margin: 0 auto 16px auto;
+    text-align: justify;
+}
+body {
+    color: var(--primary-color-text);
+    
+  }
+
+#pprimo_articolo, #secondo_articolo {
+    display: inline-block;
+    margin: 40px 0;
+    text-align: left;
+}
+
+#pprimo_articolo h4, #secondo_articolo h4 {
+    width: 90%;
+    line-height: 1.6;
+    font-size: var(--primary-size-text);
+    text-align: justify;
+}
+
+
+#pprimo_articolo .ImgPrimoGruppo, #secondo_articolo .ImgPrimoGruppo{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: 35%;
+    height: auto;
+}
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background: var(--primary-color-background-footer);
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--primary-font-family-footer);
+    font-size: var(--primary-font-size-footer);
+    color: var(--primary-color-text);
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+
+footer div {
+    width: 100%;
+    margin: 1% 4%;
+
+}
+
+footer #autori {
+    width: 30%;
+    text-align: left;
+    margin-top: 1%;
+    overflow: auto;
+
+}
+
+footer #contatti {
+    width: 30%;
+    text-align: center;
+    margin-top: 1%;
+    overflow: auto;
+
+}
+
+footer #indirizzo {
+    width: 30%;
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+    overflow: auto;
+
+}
+
+
+footer #indirizzo #indirizzo_descrizione {
+    width: 75%;
+}
+
+footer #indirizzo #indirizzo_descrizione img {
+   float: left;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .indice li {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+    h1 {
+        font-family: Miofont;
+        font-size: var(--primary-fontsize-h1);
+        margin-top: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primary-color-text);
+    }
+
+    #primo_articolo,
+    #altri_articoli {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    #primo_articolo figure,
+    #primo_articolo .descrizionePrimoArticolo,
+    #altri_articoli #altri_articoli_sinistra,
+    #altri_articoli #altri_articoli_centro,
+    #altri_articoli #altri_articoli_destra {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #primo_articolo .descrizionePrimoArticolo img {
+        position: static;
+        margin: 10px auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #autori,
+    footer #contatti,
+    footer #indirizzo {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    footer #indirizzo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    html {
+        width: 95%;
+    }
+}

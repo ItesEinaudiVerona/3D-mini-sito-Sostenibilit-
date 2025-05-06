@@ -124,8 +124,13 @@ nav .indice li {
     list-style: none;
     padding: 0;
     
-
 }
+
+nav .indice li .active{
+    background-color: #1e5f31;
+    
+}
+
 
 nav .indice li a {
     font-family: sans-serif;

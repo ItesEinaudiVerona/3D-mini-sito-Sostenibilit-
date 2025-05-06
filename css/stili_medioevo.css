@@ -1,0 +1,45 @@
+h4 {
+    color: white;
+    text-align: justify;
+    margin: 25px 25px;
+}
+
+figcaption {
+    color: white;
+    margin-bottom: 25px;
+}
+
+#primo_articolo_quintogruppo {
+    display: inline-flex;
+}
+
+#left {
+    margin-left: 0;
+}
+
+#left,
+#right,
+#image {
+    width: 33%;
+}
+
+
+figure {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.ImgquintoGruppo_primoarticolo{
+    width: 100%;
+    height: auto;
+
+}
+
+.ImgquintoGruppo {
+    width: 50%;
+    height: auto;
+}
